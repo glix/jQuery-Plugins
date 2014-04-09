@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>jQuery Win8 Notify Demos</title>
+<link rel="stylesheet" type="text/css" href="css/win8-notify.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<style type="text/css">
+body {
+margin: 0px 0px 0px 0px;
+background-color: black;
+color: white;
+}
+#demo-notif {
+margin-top: 150px;
+text-align: center;
+}
+#demo-notif button {
+border: solid 2px white;
+padding: 40px;
+min-width: 10%;
+margin-top: 2%;
+margin-left: 1%;
+text-align: center;
+font-weight: bold;
+margin-bottom: 2%;
+cursor: pointer;
+}
+</style>
+<script type="text/javascript">
+	var def="black";
+	function showNotification(color){
+				$( "#notification" ).removeClass(def);
+				$( "#notification" ).addClass(color);
+				def=color;
+				$( "#notification" ).fadeIn( "slow" );
+				//alert('hi');
+				$(".win8-notif-button").click(function(){
+		//alert('hi');
+		$(".notification").fadeOut("slow");
+	});
+	
+	}
+	
+</script>
+</head>
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/other/Creating-Windows-8-Style-Toast-Notifications-with-jQuery-CSS3-Win8-Notify.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div id="demo-notif">
+<h1>jQuery Win8 Notify Demos</h1>
+<button class="black" onclick="showNotification('black');">Black </button>
+<button class="green" onclick="showNotification('green');">Green </button>
+<button class="teal" onclick="showNotification('teal');">Teal </button>
+<button class="blue" onclick="showNotification('blue');">Blue </button>
+<button class="purple" onclick="showNotification('purple');">Purple </button>
+<button class="dark-purple" onclick="showNotification('dark-purple');">Dark Purple </button>
+<button class="pink" onclick="showNotification('pink');">Pink </button>
+<button class="red" onclick="showNotification('red');">Red </button>
+<button class="orange" onclick="showNotification('orange');">Orange </button>
+<button class="amber" onclick="showNotification('amber');">Amber </button>
+<button class="yellow" onclick="showNotification('yellow');">Yellow </button>
+<button class="brown" onclick="showNotification('brown');">Brown </button>
+</div>
+<div id="notification" class="notification black">
+<div class="dark-back"> </div>
+<div class="win8-notif-body">
+<div class="mid">
+<h3>Heading</h3>
+<p>This is the demo notifification descrption that can be long enough.sjkdfhgsjkldfsgkldfjg
+						sdfgksldfjgkl
+						sdfkgsj;dlfkgj
+						dfjgkd;fklgjs;dfg
+						sdfgjsldkfjg</p>
+<button class="win8-notif-button">OK</button>
+<button class="win8-notif-button">CANCEL</button>
+</div>
+</div>
+</div>
+</body>
+</html>
