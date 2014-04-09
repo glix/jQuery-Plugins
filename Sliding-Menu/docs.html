@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>drawer.js &middot; Cooker</title>
+<!-- Vendor CSS -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://rawgithub.com/teq-inc/cooker/master/dist/css/cooker.css" />
+<!-- Doc CSS -->
+<link rel="stylesheet" href="./docs.css">
+<!-- cooker.drawer CSS -->
+<link rel="stylesheet" href="./cooker.drawer.css">
+<!-- Vendor js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- cooker.drawer -->
+<script src="./cooker.drawer.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.drawer').drawer({
+    desktopEvent:'click'
+  });
+});
+</script>
+</head>
+<body class="home">
+  <button class="drawer-toggle btn btn-outline-white">click or touch</button>
+  <div class="drawer drawer-default">
+    <nav class="drawer-nav" role="navigation">
+      <div class="drawer-brand"><a href="./">drawer</a>
+      </div>
+      <ul class="nav drawer-nav-list">
+        <li><a href="#">Nav1</a></li>
+        <li><a href="#">Nav2</a></li>
+        <li><a href="#">Nav3</a></li>
+        <li><a href="#">Nav4</a></li>
+        <li><a href="#">Nav5</a></li>
+        <li><a href="#">Nav6</a></li>
+        <li><a href="#">Nav7</a></li>
+        <li><a href="#">Nav8</a></li>
+        <li><a href="#">Nav9</a></li>
+        <li><a href="#">Nav10</a></li>
+        <li><a href="#">Nav11</a></li>
+        <li><a href="#">Nav12</a></li>
+        <li><a href="#">Nav13</a></li>
+        <li><a href="#">Nav14</a></li>
+        <li><a href="#">Nav15</a></li>
+        <li><a href="#">Nav16</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="drawer-overlay">
+    <div class="ck-masthead" id="content">
+      <div class="container">
+        <span class="text-icon text-icon-lg text-icon-outline">C</span>
+        <h1>cooker.drawer.js</h1>
+        <p class="lead">is a jquery plugin for easily implement a sliding drawer into your website.</p>
+        <p class="lead"><a href="https://github.com/blivesta/drawer" class="btn btn-outline-white btn-lg">Drawer GitHub Project</a>  <a href="https://github.com/teq-inc/cooker" class="btn btn-outline-white btn-lg">Cooker GitHub Project</a></p>
+        <p class=version>cooker.drawer.js is included in the <a href=https://github.com/teq-inc/cooker>Cooker</a></p>
+        <p class="version">
+        Author: <a href="https://github.com/blivesta">blivesta</a> </p>
+        
+        <div class="ck-social">
+          <ul class="ck-social-buttons">
+            <li>
+              <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=blivesta&amp;repo=drawer&amp;type=watch&amp;count=false" width=100 height=20 title="Star on GitHub"></iframe>
+            </li>
+
+          </ul>
+        </div>
+        
+      </div>
+    </div>    
+    
+    <div class="container">
+      <div class="ck-section" id="drawer">
+        <h1 id="drawer-usage" class="page-header">Usage <small>jquery & CSS3</small></h1>
+        <h3>JavaScript</h3>
+<pre><code>
+$('.drawer').drawer({
+  nav: "drawer-nav",
+  navList: "drawer-nav-list",
+  overlay: "drawer-overlay",
+  toggle: "drawer-toggle",
+  openClass: "drawer-open",
+  closeClass: "drawer-close",
+  desktopEvent: "mouseover", // or click event
+  speed: 200,
+  width: 280
+});
+</code></pre>
+
+  <h2 id="drawer-method">Methods</h2>
+
+  <h3>$().drawer(options)</h3>
+  <p> </p>
+
+  <h4>$().drawer('open')</h4>
+<pre>$('#element').drawer('open')</pre>
+  <h4>$().drawer('close')</h4>
+<pre>$('#element').drawer('close')</pre>
+  <h4>$().drawer('toggle')</h4>
+<pre>$('#element').drawer('toggle')</pre>
+  <h4>$().drawer('resize')</h4>
+<pre>$('#element').drawer('resize')</pre>
+  <h4>$().drawer('destroy')</h4>
+<pre>$('#element').drawer('destroy')</pre>
+
+</div>
+
+    </div>    
+    
+    <!-- Footer==================================================-->
+    <footer class="ck-footer" role="contentinfo">
+      <div class="container">
+        <p>Code licensed under MIT</p>
+        <ul class="ck-footer-links muted">
+          <li>&middot;</li>
+          <li>author: <a href="https://github.com/blivesta">blivesta</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
