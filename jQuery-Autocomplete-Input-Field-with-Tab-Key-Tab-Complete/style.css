@@ -1,0 +1,11 @@
+body {
+	margin: 10px 0 30px;
+}
+#content {
+	max-width: 620px;
+}
+#version {
+	color: #bbb;
+	margin-top: 10px;
+	text-align: center;
+}
